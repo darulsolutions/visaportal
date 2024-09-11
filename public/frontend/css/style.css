@@ -1,0 +1,7 @@
+.error{
+    color : #ff0000;
+}
+
+.has_error{
+    border-color : #ff0000;
+}
