@@ -28,7 +28,7 @@
           <li class="nav-item">
             <a href="{{ url('add-file') }}" class="nav-link">
               <i class="nav-icon fas fa-window-restore"></i>
-              <p>Create File</p>
+              <p>New File</p>
             </a>
           </li>
           <li class="nav-item">

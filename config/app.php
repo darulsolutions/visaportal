@@ -52,9 +52,9 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://localhost/visa_portal'),
+    'url' => env('APP_URL', 'http://localhost/visaportal/'),
 
-    'asset_url' => env('ASSET_URL', 'http://localhost/visa_portal/public'),
+    'asset_url' => env('ASSET_URL', 'http://localhost/visaportal/public'),
 
     /*
     |--------------------------------------------------------------------------

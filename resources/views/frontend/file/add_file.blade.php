@@ -51,7 +51,16 @@
 
                                     <hr>
                                     <div class="row">
-                                        <div class="form-group col-3">
+
+                                        <div class="form-group col-6">
+                                            <label for="">File Number</label>
+                                            <input type="number" name="file_number" value="{{ old('file_number') }}" class="form-control {{ isset($errors) && $errors->has('file_number') ? 'has_error' : ''}}" id="" placeholder="Enter file Number">
+                                            @if($errors->has('file_number'))
+                                                <span class="error">{{ $errors->first('file_number') }}<span>
+                                            @endif
+                                        </div>
+
+                                        <div class="form-group col-6">
                                             <label>Country</label>
                                             <select name="country" class="form-control select2 {{ isset($errors) && $errors->has('country') ? 'has_error' : ''}}" style="width: 100%;">
                                                 <option value="1" {{ old('country') && old('country') == "1" ? 'selected' : 'selected' }}>Pakistan</option>
@@ -60,7 +69,7 @@
                                                 <span class="error">{{ $errors->first('country') }}<span>
                                             @endif
                                         </div>
-                                        <div class="form-group col-3">
+                                        <div class="form-group col-6">
                                             <label>City</label>
                                             <select name="city" class="form-control select2 {{ isset($errors) && $errors->has('city') ? 'has_error' : ''}}" style="width: 100%;">
                                                 <option value="1" {{ old('city') && old('city') == "1" ? 'selected' : '' }}>Karachi</option>
