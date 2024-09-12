@@ -11,31 +11,31 @@
   <title>AdminLTE 3 | {{ isset($title) && !empty($title) ? $title : ''}}</title>
 
   <!-- Font Awesome Icons -->
-  <link rel="stylesheet" href="{{ url('frontend/plugins/fontawesome-free/css/all.min.css') }}">
+  <link rel="stylesheet" href="{{ asset('frontend/plugins/fontawesome-free/css/all.min.css') }}">
   <!-- overlayScrollbars -->
-  <link rel="stylesheet" href="{{ url('frontend/plugins/overlayScrollbars/css/OverlayScrollbars.min.css') }}">
+  <link rel="stylesheet" href="{{ asset('frontend/plugins/overlayScrollbars/css/OverlayScrollbars.min.css') }}">
   <!-- daterange picker -->
-  <link rel="stylesheet" href="{{ url('frontend/plugins/daterangepicker/daterangepicker.css') }}">
+  <link rel="stylesheet" href="{{ asset('frontend/plugins/daterangepicker/daterangepicker.css') }}">
    <!-- Bootstrap Color Picker -->
-  <link rel="stylesheet" href="{{ url('frontend/plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css') }}">
+  <link rel="stylesheet" href="{{ asset('frontend/plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css') }}">
     <!-- Select2 -->
-  <link rel="stylesheet" href="{{ url('frontend/plugins/select2/css/select2.min.css') }}">
-  <link rel="stylesheet" href="{{ url('frontend/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css') }}">
+  <link rel="stylesheet" href="{{ asset('frontend/plugins/select2/css/select2.min.css') }}">
+  <link rel="stylesheet" href="{{ asset('frontend/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css') }}">
    <!-- DataTables -->
-  <link rel="stylesheet" href="{{ url('frontend/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css') }}">
-  <link rel="stylesheet" href="{{ url('frontend/plugins/datatables-responsive/css/responsive.bootstrap4.min.css') }}">
+  <link rel="stylesheet" href="{{ asset('frontend/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css') }}">
+  <link rel="stylesheet" href="{{ asset('frontend/plugins/datatables-responsive/css/responsive.bootstrap4.min.css') }}">
   <!-- Theme style -->
-  <link rel="stylesheet" href="{{ url('frontend/dist/css/adminlte.css') }}">
+  <link rel="stylesheet" href="{{ asset('frontend/dist/css/adminlte.css') }}">
    <!-- Bootstrap4 Duallistbox -->
-  <link rel="stylesheet" href="{{ url('frontend/plugins/bootstrap4-duallistbox/bootstrap-duallistbox.min.css') }}">
+  <link rel="stylesheet" href="{{ asset('frontend/plugins/bootstrap4-duallistbox/bootstrap-duallistbox.min.css') }}">
   <!-- iCheck for checkboxes and radio inputs -->
-  <link rel="stylesheet" href="{{ url('frontend/plugins/icheck-bootstrap/icheck-bootstrap.min.css') }}">
+  <link rel="stylesheet" href="{{ asset('frontend/plugins/icheck-bootstrap/icheck-bootstrap.min.css') }}">
     <!-- Tempusdominus Bbootstrap 4 -->
-     <link rel="stylesheet" href="{{ url('frontend/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css') }}">
+     <link rel="stylesheet" href="{{ asset('frontend/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css') }}">
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
   <!-- CSS Style  -->
-  <link href="{{ url('frontend/css/style.css') }}" rel="stylesheet">
+  <link href="{{ asset('frontend/css/style.css') }}" rel="stylesheet">
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
@@ -79,7 +79,7 @@
           <a href="#" class="dropdown-item">
             <!-- Message Start -->
             <div class="media">
-              <img src="{{ url('frontend/dist/img/user1-128x128.jpg') }}" alt="User Avatar" class="img-size-50 mr-3 img-circle">
+              <img src="{{ asset('frontend/dist/img/user1-128x128.jpg') }}" alt="User Avatar" class="img-size-50 mr-3 img-circle">
               <div class="media-body">
                 <h3 class="dropdown-item-title">
                   Brad Diesel
@@ -95,7 +95,7 @@
           <a href="#" class="dropdown-item">
             <!-- Message Start -->
             <div class="media">
-              <img src="{{ url('frontend/dist/img/user8-128x128.jpg') }}" alt="User Avatar" class="img-size-50 img-circle mr-3">
+              <img src="{{ asset('frontend/dist/img/user8-128x128.jpg') }}" alt="User Avatar" class="img-size-50 img-circle mr-3">
               <div class="media-body">
                 <h3 class="dropdown-item-title">
                   John Pierce
@@ -111,7 +111,7 @@
           <a href="#" class="dropdown-item">
             <!-- Message Start -->
             <div class="media">
-              <img src="{{ url('frontend/dist/img/user3-128x128.jpg') }}" alt="User Avatar" class="img-size-50 img-circle mr-3">
+              <img src="{{ asset('frontend/dist/img/user3-128x128.jpg') }}" alt="User Avatar" class="img-size-50 img-circle mr-3">
               <div class="media-body">
                 <h3 class="dropdown-item-title">
                   Nora Silvester

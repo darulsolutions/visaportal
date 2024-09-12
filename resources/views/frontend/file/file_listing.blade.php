@@ -124,7 +124,7 @@
                                                                     <input type="hidden" name="id" value="{{ isset($file->id) && !empty($file->id) ? $file->id : '' }}">
                                                                     <button type="submit" class="btn btn-block btn-outline-info btn-sm">Add Employee</button>
                                                                 </form>
-                                                                <a href="{{ url('file_permission_print').'/'.$file->id }}" type="button" class="btn btn-block btn-outline-info btn-sm">Permission Forms</a>
+                                                                <a href="{{ asset('file_permission_print').'/'.$file->id }}" type="button" class="btn btn-block btn-outline-info btn-sm">Permission Forms</a>
                                                             </td>
                                                             {{-- <td><button type="button" class="btn btn-block btn-outline-info btn-sm">File Details</button></td> --}}
                                                         </tr>

@@ -236,7 +236,7 @@
                                     </div>
                                     <div class="col-md-4 info-box mb-3 bg-warning " id="open4" style="background-color:rgb(146, 95, 0) !important; color:#107896 ;font-weight: bold; padding:30px; height: 150px">
                                         <span class="info-box-icon">
-                                        <img src="{{ url('/frontend/images/download.png') }}" alt="thumbnail"></span>
+                                        <img src="{{ asset('/frontend/images/download.png') }}" alt="thumbnail"></span>
                                         &nbsp;&nbsp;
                                         <div class="info-box-content">
                                             <span class="info-box-text" style="font-size: 25px;padding-top:20px ">File Details</span>
@@ -248,7 +248,7 @@
                                     </div>
                                     <div class="col-md-4 info-box mb-3 bg-warning " id='open5' style="color:#107896 ;font-weight: bold; padding:30px; height: 150px">
                                         <span class="info-box-icon">
-                                        <img src="{{ url('/frontend/images/download.png') }}" alt="thumbnail"></span>
+                                        <img src="{{ asset('/frontend/images/download.png') }}" alt="thumbnail"></span>
                                         &nbsp;&nbsp;
                                         <div class="info-box-content">
                                             <span class="info-box-text" style="font-size: 25px;padding-top:20px ">Demand Letter</span>
@@ -261,7 +261,7 @@
                                     <div class="col-md-4 info-box mb-3 bg-success "  id="open6"  style="color:#107896 ;font-weight: bold; padding:30px;  height: 150px">
                                         {{-- <span class="info-box-icon"><input type="checkbox" style="margin-right:10px"> --}}
                                         <span class="info-box-icon">
-                                        <img src="{{ url('/frontend/images/download.png') }}" alt="thumbnail"></span>
+                                        <img src="{{ asset('/frontend/images/download.png') }}" alt="thumbnail"></span>
                                         &nbsp;&nbsp;
                                         <div class="info-box-content">
                                             <span class="info-box-text" style="font-size: 25px;padding-top:20px ">Undertaking</span>
@@ -275,7 +275,7 @@
 
                                     <div class="col-md-4 info-box mb-3 bg-danger" id="open" style="font-weight: bold; padding:30px; height:150px">
                                         <span class="info-box-icon">
-                                        <img src="{{ url('/frontend/images/download.png') }}" alt="thumbnail"></span>
+                                        <img src="{{ asset('/frontend/images/download.png') }}" alt="thumbnail"></span>
                                         &nbsp;&nbsp;
                                         <div class="info-box-content">
                                             <span class="info-box-text" style="font-size: 25px">Undertaking Regarding Actual</span>
@@ -289,7 +289,7 @@
                                     </div>
                                     <div class="col-md-4 info-box mb-3 bg-info" id="open2" style="color:#107896 ;font-weight: bold; padding:30px; height:150px">
                                         <span class="info-box-icon">
-                                        <img src="{{ url('/frontend/images/download.png') }}" alt="thumbnail"></span>
+                                        <img src="{{ asset('/frontend/images/download.png') }}" alt="thumbnail"></span>
                                         &nbsp;&nbsp;
                                         <div class="info-box-content">
                                             <span class="info-box-text" style="font-size: 25px">Application Under Rule (19)<br>
@@ -303,7 +303,7 @@
 
                                     <div class="col-md-4 info-box mb-3 bg-success" id="open3"  style="background-color:#360590 !important;font-weight: bold; padding:30px;  height:150px">
                                         <span class="info-box-icon">
-                                        <img src="{{ url('/frontend/images/download.png') }}" alt="thumbnail"></span>
+                                        <img src="{{ asset('/frontend/images/download.png') }}" alt="thumbnail"></span>
                                         &nbsp;&nbsp;
                                         <div class="info-box-content">
                                             <span class="info-box-text" style="font-size: 25px">Application To Grant <br> a Permission</span>
@@ -316,7 +316,7 @@
                                     </div>
                                     <div class="col-md-4 info-box mb-3 bg-success" id="open7" style="background-color:#740101 !important;font-weight: bold; padding:30px;  height:150px">
                                         <span class="info-box-icon">
-                                        <img src="{{ url('/frontend/images/download.png') }}" alt="thumbnail"></span>
+                                        <img src="{{ asset('/frontend/images/download.png') }}" alt="thumbnail"></span>
                                         &nbsp;&nbsp;
                                         <div class="info-box-content">
                                             <span class="info-box-text" style="font-size: 25px">Permission Performa</span>

@@ -1,6 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\FileDetailController;
+use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\LoginController;
 
 /*
 |--------------------------------------------------------------------------
@@ -12,37 +16,35 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::group(['middleware'=>'user'], function(){
-    Route::get('/',['uses' => 'HomeController@home','as' => 'home']);
-    Route::get('/dashboard',['uses' => 'HomeController@home','as' => 'home']);
-    Route::get('/add-file',['uses' => 'FileDetailController@addFile','as' => 'addFile']);
-    Route::get('/file-listing',['uses' => 'FileDetailController@filesList','as' => 'filesList']);
-    Route::get('/employee-listing',['uses' => 'FileDetailController@employeeList','as' => 'filesList']);
-    Route::get('/employee_details',['uses' => 'FileDetailController@employee_details','as' => 'employee_details']);
-    Route::get('/add-employee',['uses' => 'FileDetailController@addEmployee','as' => 'addEmployee']);
-    Route::post('/add-employee',['uses' => 'FileDetailController@addEmployee','as' => 'addEmployee']);
-    Route::get('/file_permission_print/{id}',['uses' => 'FileDetailController@file_permission_print','as' => 'file_permission_print']);
+Route::group(['middleware' => 'user'], function () {
+    Route::get('/', [HomeController::class, 'home'])->name('home');
+    Route::get('/dashboard', [HomeController::class, 'home'])->name('home');
+    Route::get('/add-file', [FileDetailController::class, 'addFile'])->name('addFile');
+    Route::get('/file-listing', [FileDetailController::class, 'filesList'])->name('filesList');
+    Route::get('/employee-listing', [FileDetailController::class, 'employeeList'])->name('employeeList');
+    Route::get('/employee_details', [FileDetailController::class, 'employee_details'])->name('employee_details');
+    Route::get('/add-employee', [FileDetailController::class, 'addEmployee'])->name('addEmployee');
+    Route::post('/add-employee', [FileDetailController::class, 'addEmployee'])->name('addEmployee');
+    Route::get('/file_permission_print/{id}', [FileDetailController::class, 'file_permission_print'])->name('file_permission_print');
 
-    Route::get('/Categories',['uses' => 'CategoryController@index','as' => 'addEmployee']);
-    Route::get('/add-Category',['uses' => 'CategoryController@create','as' => 'addEmployee']);
-    Route::post('/add-Category',['uses' => 'CategoryController@store','as' => 'addCategory']);
+    Route::get('/Categories', [CategoryController::class, 'index'])->name('categories');
+    Route::get('/add-Category', [CategoryController::class, 'create'])->name('addCategory');
+    Route::post('/add-Category', [CategoryController::class, 'store'])->name('storeCategory');
 
-    Route::get('/add-employee/{file_id}',['uses' => 'FileDetailController@addEmployee','as' => 'addEmployee']);
-    Route::get('/file-details/{file_id}',['uses' => 'FileDetailController@fileDetails','as' => 'fileDetails']);
-    Route::get('/update-file-status/{file_id}/{status_id}',['uses' => 'FileDetailController@updatefileStatus','as' => 'updatefileStatus']);
-    Route::get('/employee-details/{employee_id}',['uses' => 'FileDetailController@employeeDetails','as' => 'employeeDetails']);
-    Route::get('/logout',['uses' => 'LoginController@logout','as' => 'logout']);
+    Route::get('/add-employee/{file_id}', [FileDetailController::class, 'addEmployee'])->name('addEmployeeWithFileId');
+    Route::get('/file-details/{file_id}', [FileDetailController::class, 'fileDetails'])->name('fileDetails');
+    Route::get('/update-file-status/{file_id}/{status_id}', [FileDetailController::class, 'updatefileStatus'])->name('updatefileStatus');
+    Route::get('/employee-details/{employee_id}', [FileDetailController::class, 'employeeDetails'])->name('employeeDetails');
+    Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
 });
-Route::get('/signin',['uses' => 'LoginController@signin','as' => 'signin']);
-Route::post('/signin',['uses' => 'LoginController@signin','as' => 'signin']);
 
+Route::get('/signin', [LoginController::class, 'signin'])->name('signin');
+Route::post('/signin', [LoginController::class, 'signin'])->name('signin');
 
 Route::get('forms/{name}', function ($name) {
-    return view('Bashir_Forms/'.$name);
+    return view('Bashir_Forms/' . $name);
 });
 
 // Route::get('/{name}', function ($name) {
-//     return view('frontend/file.'.$name);
+//     return view('frontend/file.' . $name);
 // });
-
-

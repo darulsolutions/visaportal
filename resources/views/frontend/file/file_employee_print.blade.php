@@ -123,7 +123,7 @@
 
                                     <div class="col-md-6 info-box mb-3 bg-success" style="background-color:#360590 !important;font-weight: bold; padding:30px ;">
                                         <span class="info-box-icon"><input type="checkbox" style="margin-right:10px">
-                                        <img src="{{ url('/frontend/images/download.png') }}" alt="thumbnail"></span>
+                                        <img src="{{ asset('/frontend/images/download.png') }}" alt="thumbnail"></span>
                                         &nbsp;&nbsp;
                                         <div class="info-box-content">
                                             <span class="info-box-text">Application To Grant a Permission</span>
@@ -132,7 +132,7 @@
                                     </div>
                                     <div class="col-md-6 info-box mb-3 bg-success" style="background-color:#740101 !important;font-weight: bold; padding:30px ;">
                                         <span class="info-box-icon"><input type="checkbox" style="margin-right:10px">
-                                        <img src="{{ url('/frontend/images/download.png') }}" alt="thumbnail"></span>
+                                        <img src="{{ asset('/frontend/images/download.png') }}" alt="thumbnail"></span>
                                         &nbsp;&nbsp;
                                         <div class="info-box-content">
                                             <span class="info-box-text">Permission Performa</span>
